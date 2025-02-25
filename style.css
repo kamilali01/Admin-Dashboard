@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Side', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.sidebar{
+    grid-column: 1/1;
+    grid-row: 1/5;
+    color: white;
+    background-color: rgb(92, 11, 168);
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+.header{
+    grid-column: 2/4;
+    grid-row: 1/1;
+}
+@font-face {
+    font-family: 'Side'; /* Choose a custom name */
+    src: url('./font/Nexa-Heavy.ttf') format('truetype'); /* Adjust the path */
+    font-weight: normal;
+    font-style: normal;
+  }
+.sidebar-section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Side', sans-serif;
+}
+.sidebar-section1 object{
+    height: 4em;
+    filter: invert(1) brightness(2);
+}
+.sidebar-section2, .sidebar-section3{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.sidebar-section2 > div, .sidebar-section3 > div{
+    display: flex;
+    align-items: end;
+    gap: 2em;
+}
+.sidebar svg{
+    height: 2rem;
+}
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2em;
+    
+}
+.header-search{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.header-search object{
+    height: 1.5em;
+}
+.header-search input{
+    background-color: rgb(224, 218, 218);
+    border: 0;
+    border-radius: 30px;
+    min-width: 550px;
+    min-height: 2.5em;
+}
+.header-profile{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: end;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+.header-profile svg{
+    height: 1.2rem;
+}
+.header-profile img{
+    height: 2.4rem;
+}
+.header-greetings{
+    display: flex;
+    font-size: 0.8rem;
+    text-align: left;
+    align-items: end;
+}
+.header-greetings h1{
+    font-weight: bold;
+}
+.profile-pic{
+    height: 5rem;
+    grid-row:1/5;
+}
+.header-buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+.header-buttons button{
+    background-color: rgb(92, 11, 168);
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    min-height: 3em;
+    min-width: 7em;
+}
