@@ -6,7 +6,7 @@
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr;
 }
 .sidebar{
     grid-column: 1/1;
@@ -25,6 +25,12 @@
 @font-face {
     font-family: 'Side'; /* Choose a custom name */
     src: url('./font/Nexa-Heavy.ttf') format('truetype'); /* Adjust the path */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Light'; /* Choose a custom name */
+    src: url('./font/Nexa-ExttfraLight.') format('truetype'); /* Adjust the path */
     font-weight: normal;
     font-style: normal;
   }
@@ -55,6 +61,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 2em;
+    padding-bottom: 0.5em;
     
 }
 .header-search{
@@ -113,4 +120,87 @@
     border-radius: 50px;
     min-height: 3em;
     min-width: 7em;
+}
+.main{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    padding: 1.5rem;
+    background-color: rgba(226,232,240,255);
+    gap: 2rem;
+    grid-auto-rows: min-content;
+}
+.article{
+    padding: 1em;
+    padding-top: 0;
+    border-left: 0.5em solid yellow;
+    height: 220px;
+    background-color: white;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.article p{
+    font-size: 0.7rem;
+    color: rgb(83, 83, 83);
+}
+.article img{
+    max-height: 1.3em;
+}
+.article div{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin-top: 1em;
+}
+.main-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+}
+.your-projects{
+    grid-column: 1/3;
+    max-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.main-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.announcements{
+    background-color: white;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+.announcements p{
+    font-size: 0.7rem;
+    color: rgb(83, 83, 83);
+}
+.snake{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(83, 83, 83);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.trending{
+    background-color: white;
+    display:grid;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.trends{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 0.6em;
+}
+.trends img{
+    max-height: 2.5em;
+}
+.header-search input{
+    padding: 0.5rem;
 }
